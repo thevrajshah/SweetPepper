@@ -9,6 +9,9 @@ export default function Home() {
               src="/assets/cake-1.jpg"
               alt="First slide"
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Do you want to master the art of Baking?</h5>
+            </div>
           </div>
           <div class="carousel-item">
             <img
@@ -16,6 +19,9 @@ export default function Home() {
               src="/assets/cake-2.jpg"
               alt="Second slide"
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Do you desire to be an accomplished chef?</h5>
+            </div>
           </div>
           <div class="carousel-item">
             <img
@@ -23,6 +29,9 @@ export default function Home() {
               src="/assets/cake-3.jpg"
               alt="Third slide"
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Do you dream of running your own eatery?</h5>
+            </div>
           </div>
         </div>
         <a
@@ -45,7 +54,7 @@ export default function Home() {
         </a>
       </div>
       <section id="colouredSection">
-        <div class="container p-5">
+        <div class="container">
           <h3 className="sectionHeader">OUR COURSES</h3>
           <div style={{ textAlign: "center" }}>
             <i>"No one is born a great Chef, one learns by doing."</i>
@@ -66,8 +75,8 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className="container">
-          <div class="row py-5">
+        <div className="container py-5">
+          <div class="row">
             <a href="" class="col-lg-2 col-md-12 col-7 mx-auto">
               <img
                 src="assets/city_n_guild_level2_accrediation.png"
@@ -76,6 +85,7 @@ export default function Home() {
               />
             </a>
             <div class="col-lg-10 col-md-12 col-12 py-4">
+              <h3>WHO ARE WE?</h3>
               <p>
                 We cover Diploma in Baking & Patisserie - Level 2, students can
                 also continue to study abroad. City & Guilds have been global

@@ -24,6 +24,7 @@ h6 {
   font-family: $serif;
 }
 p {
+  line-height: 1.6;
   opacity: 0.8;
 }
 ul {
@@ -52,6 +53,9 @@ button {
   width: fit-content;
   margin: auto;
   position: relative;
+  &.left {
+    margin: 0;
+  }
   &::after {
     position: relative;
     z-index: -1;
@@ -60,7 +64,7 @@ button {
     height: 10px;
     width: 100%;
     background: var(--accent1);
-    opacity: 0.9;
+    opacity: 0.8;
     top: -12px;
   }
 }
@@ -117,6 +121,7 @@ a.dropdown-item:hover {
   background: var(--accent2);
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   color: #fff;
+  padding: 40px;
   p {
     color: #fafafa;
   }
