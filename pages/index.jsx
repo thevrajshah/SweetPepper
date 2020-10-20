@@ -1,57 +1,72 @@
 export default function Home() {
   return (
     <>
-      <div id="carouselControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              class="d-block w-100"
-              src="/assets/cake-1.jpg"
-              alt="First slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Do you want to master the art of Baking?</h5>
+      <div className="row">
+        <div class="col-lg-6 col-md-6 col-12"></div>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div
+            id="carouselControls"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="d-block w-100"
+                  src="/assets/cake-1.jpg"
+                  alt="First slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Do you want to master the art of Baking?</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/cake-2.jpg"
+                  alt="Second slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Do you desire to be an accomplished chef?</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100"
+                  src="/assets/cake-3.jpg"
+                  alt="Third slide"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Do you dream of running your own eatery?</h5>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="/assets/cake-2.jpg"
-              alt="Second slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Do you desire to be an accomplished chef?</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              class="d-block w-100"
-              src="/assets/cake-3.jpg"
-              alt="Third slide"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Do you dream of running your own eatery?</h5>
-            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselControls"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselControls"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselControls"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselControls"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
       <section id="colouredSection">
         <div class="container">
@@ -98,6 +113,17 @@ export default function Home() {
                 job and progress onto the next job and a life-long career.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="colouredSection">
+        <div className="container">
+          <div className="imgContainer">
+            {/* {pictures.map((url, key) => (
+            <div className='imgWrapper'>
+              <img key={key} src={url} />
+            </div>
+          ))} */}
           </div>
         </div>
       </section>

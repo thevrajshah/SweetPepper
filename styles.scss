@@ -9,11 +9,12 @@ $sans-serif: "Lato", sans-serif;
   padding: 0;
   font-family: $sans-serif;
   // Colors
-  --accent1: #c33a47;
-  --accent2: #2e335a;
+  --accent: #c74653;
 }
-html {
-  background: #e9ecef;
+body {
+  color: #333;
+  text-rendering: optimizeLegibility;
+  background: var(--light);
 }
 h1,
 h2,
@@ -25,7 +26,17 @@ h6 {
 }
 p {
   line-height: 1.6;
-  opacity: 0.8;
+  color: #666;
+}
+a {
+  color: inherit;
+}
+section {
+  background: var(--light);
+}
+#colouredSection {
+  background: #fff;
+  padding: 40px;
 }
 ul {
   list-style: none;
@@ -40,13 +51,14 @@ button {
 }
 #CTA {
   color: #fff;
-  background: var(--accent1);
-  border: 2px solid var(--accent1);
+  background: var(--accent);
+  border: 2px solid var(--accent);
   font-weight: 700;
+  padding: 3px 10px;
   &:hover {
     background: transparent;
-    border-color: var(--accent1);
-    color: #fff;
+    border-color: var(--accent);
+    color: #333;
   }
 }
 .sectionHeader {
@@ -63,17 +75,19 @@ button {
     display: block;
     height: 10px;
     width: 100%;
-    background: var(--accent1);
-    opacity: 0.8;
-    top: -12px;
+    background: var(--accent);
+    opacity: 0.75;
+    top: -10px;
   }
 }
+
+// NavBar
 nav {
-  background-color: var(--accent2);
   min-height: 60px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   a.nav-link {
     cursor: pointer;
+    color: #333;
     &:focus,
     &:hover {
       transition: 0.3s;
@@ -83,6 +97,9 @@ nav {
   .active {
     font-weight: 700;
   }
+}
+#nav-dropdown {
+  width: 100%;
 }
 #social {
   .nav-link {
@@ -98,39 +115,60 @@ nav {
 .navbar-brand {
   font-family: $serif;
   letter-spacing: 0.5px;
-}
-a.dropdown-item:focus,
-a.dropdown-item:hover {
-  background: #c33a4825;
+  // color: #333;
+  color: var(--accent);
   transition: 0.3s;
+  &:hover {
+    color: #333;
+  }
+}
+a.dropdown-item {
+  &:focus,
+  &:hover {
+    background: #c33a4825;
+    transition: 0.3s;
+  }
 }
 
-//
-.carousel-inner,
-.carousel-item .active {
-  height: 60vh;
-}
+// HomePage
 #cityGuilds {
   height: 100px;
 }
-//
 #ownerImg {
   border-radius: 1rem;
 }
-#colouredSection {
-  background: var(--accent2);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
-  color: #fff;
-  padding: 40px;
-  p {
-    color: #fafafa;
+// Gallery
+.imgContainer {
+  position: relative;
+  padding: 0;
+  top: 10px;
+  text-align: center;
+}
+.imgWrapper {
+  display: inline-flex;
+  padding: 0;
+  overflow: hidden;
+  height: 20rem;
+  width: 20rem;
+  justify-content: center;
+  margin-top: -10px;
+  img {
+    cursor: pointer;
+    max-height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(0.9);
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      transform: scale(1.07);
+      filter: none;
+    }
   }
 }
 
 // Footer
 footer {
-  background: var(--accent2);
-  color: #fff;
+  background: #fff;
   h5 {
     width: fit-content;
     &::after {
@@ -140,8 +178,8 @@ footer {
       display: block;
       height: 10px;
       width: 100%;
-      background: var(--accent1);
-      opacity: 0.9;
+      background: var(--accent);
+      opacity: 0.75;
       top: -10px;
     }
   }
@@ -149,12 +187,12 @@ footer {
   a {
     text-transform: uppercase;
     font: 700 12px $sans-serif;
+    color: #333;
   }
   a {
-    color: #fff;
     opacity: 0.6;
     &:hover {
-      color: #f07075;
+      color: var(--accent);
     }
   }
   .copyright {
@@ -168,9 +206,6 @@ footer {
 }
 
 @media only screen and (max-width: var(--breakpoint-md)) {
-  body {
-    background-color: turquoise;
-  }
   #social {
     .nav-link {
       padding: 10px;
