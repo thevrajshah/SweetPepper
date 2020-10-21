@@ -5,13 +5,13 @@ export default function Footer() {
     <footer>
       <div class="container">
         <div class="row pt-5">
-          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="col-lg-5 col-md-6 col-sm-12 col-12">
             <h5>CONTACT US</h5>
             <p>1st Floor, 18-A Aditi Park,</p>
             <p>Beside Akota Stadium, Akota,</p>
             <p> Vadodara-390020, Gujarat, India.</p>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+          <div class="col-lg-5 col-md-6 col-sm-12 col-12">
             <h5>WORKING HOURS</h5>
             <p>Monday - Saturday : 9:00 Am - 7:00 Pm</p>
             <p>
@@ -22,15 +22,20 @@ export default function Footer() {
               <a href="mailto:info@sweetpepper.net">info@sweetpepper.net</a>
             </p>
           </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="col-lg-2 col-md-12 col-sm-12 col-12">
             <h5>SITEMAP</h5>
-            <div class="row">
-              <a href="index.html">HOME</a>
-              <br />
-              <a href="aboutus.html">About </a>
-              <br />
-              <a href="registration.html">Registration </a>
-            </div>
+            <ul>
+              <li>
+                <a href="index.html">HOME</a>
+              </li>
+              <li>
+                <a href="aboutus.html">About </a>
+              </li>
+              <li>
+                {" "}
+                <a href="registration.html">Registration </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
