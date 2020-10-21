@@ -111,10 +111,10 @@ nav {
   font-family: $serif;
   letter-spacing: 0.5px;
   // color: #333;
-  color: var(--accent);
+  color: var(--accent) !important;
   transition: 0.3s;
   &:hover {
-    color: #333;
+    color: #333 !important;
   }
 }
 a.dropdown-item {
@@ -193,7 +193,7 @@ footer {
     text-align: center;
     padding-bottom: 40px;
     background-color: var(--accent2);
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
     font-size: 12px;
   }
