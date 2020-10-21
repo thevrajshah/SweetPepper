@@ -12,9 +12,9 @@ $sans-serif: "Lato", sans-serif;
   --accent: #c74653;
 }
 body {
-  color: #333;
   text-rendering: optimizeLegibility;
   background: var(--light);
+  color: #333 !important;
 }
 h1,
 h2,
@@ -85,17 +85,17 @@ button {
 nav {
   min-height: 60px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-  a.nav-link {
-    cursor: pointer;
-    color: #333;
-    &:focus,
-    &:hover {
-      transition: 0.3s;
-      color: #f0707d;
-    }
-  }
   .active {
     font-weight: 700;
+  }
+}
+.nav-link {
+  cursor: pointer;
+  color: #333;
+  &:focus,
+  &:hover {
+    transition: 0.3s;
+    color: #f0707d !important;
   }
 }
 #nav-dropdown {
@@ -106,11 +106,6 @@ nav {
     padding: 0;
     margin-right: 5px;
   }
-}
-#header {
-  height: 20px;
-  border-radius: 0;
-  background: #fafafa;
 }
 .navbar-brand {
   font-family: $serif;
@@ -129,7 +124,6 @@ a.dropdown-item {
     transition: 0.3s;
   }
 }
-
 // HomePage
 #cityGuilds {
   height: 100px;

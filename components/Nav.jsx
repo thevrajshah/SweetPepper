@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Nav() {
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className="container">
           <ul
             className="nav navbar-nav flex-row justify-content-center flex-nowrap mr-2"
@@ -23,7 +23,7 @@ export default function Nav() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="">
-                <FaTwitter />{" "}
+                <FaTwitter />
               </a>{" "}
             </li>
           </ul>
@@ -58,7 +58,7 @@ export default function Nav() {
                   <a className="nav-link">Registration</a>
                 </li>
               </NavLink>
-              <li className="nav-item dropdown ">
+              <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   id="navbarDropdown"
@@ -70,7 +70,7 @@ export default function Nav() {
                   Courses
                 </a>
                 <div
-                  className="dropdown-menu"
+                  className="dropdown-menu border-0 p-0 overflow-hidden"
                   id="nav-dropdown"
                   aria-labelledby="navbarDropdown"
                 >

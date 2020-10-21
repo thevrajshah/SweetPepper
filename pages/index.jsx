@@ -1,10 +1,11 @@
 export default function Home() {
   return (
     <>
-      <div className="row">
-        <div class="col-lg-6 col-md-6 col-12"></div>
-        <div class="col-lg-6 col-md-6 col-12">
-          <div
+      <div className="container-fluid">
+        <div className="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-1 order-sm-12 py-3">
+            <img className="mx-auto w-100" src="/assets/cake.svg" alt="" />
+            {/* <div
             id="carouselControls"
             class="carousel slide"
             data-ride="carousel"
@@ -65,6 +66,10 @@ export default function Home() {
               ></span>
               <span class="sr-only">Next</span>
             </a>
+          </div> */}
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-12 order-sm-1 py-4">
+            <h2 className="my-lg-5">Some Catchy Line </h2>
           </div>
         </div>
       </div>
@@ -95,7 +100,7 @@ export default function Home() {
             <a href="" class="col-lg-2 col-md-12 col-7 mx-auto">
               <img
                 src="assets/city_n_guild_level2_accrediation.png"
-                class="img-thumbnail"
+                class="img-thumbnail my-4"
                 alt=""
               />
             </a>
