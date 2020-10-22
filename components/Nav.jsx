@@ -70,7 +70,7 @@ export default function Nav() {
                   Courses
                 </a>
                 <div
-                  className="dropdown-menu border-0 p-0 overflow-hidden"
+                  className="dropdown-menu border-0 mb-1 p-0 overflow-hidden"
                   id="nav-dropdown"
                   aria-labelledby="navbarDropdown"
                 >
