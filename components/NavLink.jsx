@@ -25,6 +25,6 @@ export default function ActiveLink({ children, ...props }) {
   );
 }
 
-ActiveLink.propTypes = {
-  activeClassName: PropTypes.string.isRequired,
-};
+// ActiveLink.propTypes = {
+//   activeClassName: PropTypes.string.isRequired,
+// };

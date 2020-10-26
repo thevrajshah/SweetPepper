@@ -11,13 +11,19 @@ export default function About() {
         </div>
       </div>
       <section id="colouredSection">
-        <div class="container py-2">
+        <div
+          class="container py-2"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="25"
+        >
           <div class="row">
-            <div class="col-lg-6 col-md-6 col-12">
+            <div class="col-lg-6 col-md-6 col-12 p-3">
               <img
                 src="assets/owner-sanjeevk.png"
                 id="ownerImg"
-                class="img-fluid mx-5"
+                class="img-fluid mx-lg-5 mx-md-auto"
                 alt=""
               />
             </div>
@@ -54,7 +60,13 @@ export default function About() {
       </section>
       <section>
         <div className="container py-5">
-          <div className="row text-center">
+          <div
+            className="row text-center"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-once="true"
+            data-aos-delay="25"
+          >
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <h3 className="sectionHeader">Our Vision</h3>
               <p>
@@ -76,7 +88,13 @@ export default function About() {
         </div>
       </section>
       <section id="colouredSection">
-        <div className="container">
+        <div
+          className="container"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+          data-aos-delay="25"
+        >
           <h3 className="sectionHeader">The Team</h3>
           <div className="d-flex flex-wrap justify-content-center">
             <div class="card d-inline-block m-3" style={{ width: "200px" }}>

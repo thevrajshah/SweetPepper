@@ -5,30 +5,17 @@ import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 export default function Nav() {
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-white py-0">
         <div className="container">
-          <ul
-            className="nav navbar-nav flex-row justify-content-center flex-nowrap mr-2"
-            id="social"
-          >
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                <FaFacebookSquare />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                <FaInstagram />
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="">
-                <FaTwitter />
-              </a>{" "}
-            </li>
-          </ul>
           <Link href="/">
-            <a className="navbar-brand">SweetPepper</a>
+            <a className="navbar-brand">
+              <img
+                id="logo"
+                className="navbar-brand"
+                src="/assets/nav-logo-transp.png"
+                alt=""
+              />
+            </a>
           </Link>
           <button
             className="navbar-toggler border-0"
@@ -50,12 +37,12 @@ export default function Nav() {
               </NavLink>
               <NavLink href="/about">
                 <li className="nav-item">
-                  <a className="nav-link">About Us</a>
+                  <a className="nav-link">About</a>
                 </li>
               </NavLink>
-              <NavLink href="/register">
+              <NavLink href="/contact">
                 <li className="nav-item">
-                  <a className="nav-link">Registration</a>
+                  <a className="nav-link">Contact</a>
                 </li>
               </NavLink>
               <li className="nav-item dropdown">
@@ -70,16 +57,20 @@ export default function Nav() {
                   Courses
                 </a>
                 <div
-                  className="dropdown-menu border-0 mb-1 p-0 overflow-hidden"
+                  className="dropdown-menu border-0 m-0 mx-5 py-0 w-auto rounded-lg overflow-hidden bg-light"
                   id="nav-dropdown"
                   aria-labelledby="navbarDropdown"
                 >
+                  <div className="dropdown-header">
+                    <b>Diploma in Baking & Pattiserie </b>
+                  </div>
                   <NavLink href="/about-us">
-                    <a className="dropdown-item">About Us</a>
+                    <a className="dropdown-item">Entry-Level</a>
                   </NavLink>
                   <NavLink href="/gallery">
-                    <a className="dropdown-item">Gallery</a>
+                    <a className="dropdown-item">Professional</a>
                   </NavLink>
+                  <div className="dropdown-divider" />
                   <NavLink href="/contact">
                     <a className="dropdown-item" href="#">
                       Get in Touch
@@ -89,15 +80,37 @@ export default function Nav() {
               </li>
               {/* <li className="nav-item"> <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li> */}
             </ul>
-            <button
-              className="btn my-2"
-              // type="button"
-              id="CTA"
-              // data-toggle="modal"
-              // data-target="#loginModal"
-            >
-              Enroll Now!
-            </button>
+            <div className="d-flex align-items-center flex-md-row justify-content-between flex-row-reverse">
+              <ul
+                className="navbar-nav d-inline-flex flex-row justify-content-center flex-nowrap mr-2"
+                id="social"
+              >
+                <li className="nav-item">
+                  <a className="nav-link" href="">
+                    <FaFacebookSquare />
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="">
+                    <FaInstagram />
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="">
+                    <FaTwitter />
+                  </a>
+                </li>
+              </ul>
+              <button
+                className="btn my-2"
+                // type="button"
+                id="CTA"
+                // data-toggle="modal"
+                // data-target="#loginModal"
+              >
+                Enroll Now!
+              </button>
+            </div>
             {/* <button className="btn btn-outline-success" type="button">Main button</button> */}
           </div>
         </div>

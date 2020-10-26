@@ -12,3 +12,12 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+
+// [x] AOS
+// [] Gallery
+// [] Captcha
+// [] Admin
+// [x] Contact
+// [] Login
+// [] Razorpay
+// [] Tesimonials

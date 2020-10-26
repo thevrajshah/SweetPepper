@@ -3,8 +3,13 @@ import Head from "next/head";
 import "../styles.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/swiper.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App({ Component, pageProps }) {
+  React.useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>
