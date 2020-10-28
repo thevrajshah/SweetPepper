@@ -1,10 +1,10 @@
-import Layout from "../components/Layout";
-import Head from "next/head";
-import "../styles.scss";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "swiper/swiper.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import Layout from '../components/Layout';
+import Head from 'next/head';
+import '../styles.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'swiper/swiper.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function App({ Component, pageProps }) {
   React.useEffect(() => {
@@ -28,6 +28,7 @@ export default function App({ Component, pageProps }) {
           integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
           crossorigin="anonymous"
         ></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
       </Head>
       <Layout>
         <Component {...pageProps} />

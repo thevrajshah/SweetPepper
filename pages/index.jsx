@@ -61,6 +61,7 @@ export default function Home() {
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 col-12 order-12 order-sm-1 py-4">
             <h2 className="my-lg-5">Some Catchy Line </h2>
+            <button className="btn btn-success">Join Now!</button>
           </div>
         </div>
       </div>
@@ -126,13 +127,16 @@ export default function Home() {
       </section>
       <section id="colouredSection">
         <div className="container">
-          <div className="imgContainer">
-            {/* {pictures.map((url, key) => (
-            <div className='imgWrapper'>
-              <img key={key} src={url} />
-            </div>
-          ))} */}
-          </div>
+          {/* {img.map((data, key) => {
+            key = data.id;
+            return (
+              <div className="gallery">
+                <a href="" data-toggle="modal" data-target={`img$(id)`}>
+                  <img src={data.url} alt="" />
+                </a>
+              </div>
+            );
+          })} */}
         </div>
       </section>
     </>

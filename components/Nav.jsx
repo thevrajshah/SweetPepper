@@ -64,18 +64,18 @@ export default function Nav() {
                   <div className="dropdown-header">
                     <b>Diploma in Baking & Pattiserie </b>
                   </div>
-                  <NavLink href="/about-us">
+                  <NavLink href="/courses/1">
                     <a className="dropdown-item">Entry-Level</a>
                   </NavLink>
-                  <NavLink href="/gallery">
+                  <NavLink href="/courses/2">
                     <a className="dropdown-item">Professional</a>
                   </NavLink>
-                  <div className="dropdown-divider" />
-                  <NavLink href="/contact">
+                  <NavLink href="/courses/3">
                     <a className="dropdown-item" href="#">
                       Get in Touch
                     </a>
                   </NavLink>
+                  <div className="dropdown-divider" />
                 </div>
               </li>
               {/* <li className="nav-item"> <a className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li> */}

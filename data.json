@@ -1,6 +1,6 @@
 [
      {
-          "id":1,
+          "id":"1",
           "name":"Bakery Specialization",
           "description":["We work all the time with our students & together we are able to create beautiful & amazing things that surely bring positive results and complete satisfaction.", "Our chef’s dedication and team work enhance the confidence of students by taking personal attention of them all the time.","Our courses are designed as per requirements of baking industry."],
           "duration":"3 Months",
@@ -10,24 +10,24 @@
           "fees": 85000
      },
      {
-          "id":2,
-          "name":"Patt Specialization",
-          "description":["We work all the time with our students & together we are able to create beautiful & amazing things that surely bring positive results and complete satisfaction.", "Our chef’s dedication and team work enhance the confidence of students by taking personal attention of them all the time.","Our courses are designed as per requirements of baking industry."],
-          "duration":"3 Months",
+          "id":"2",
+          "name":"Cake Specialization",
+          "description":["We work all the time with our students  & together we are able to create beautiful & amazing things that surely bring positive results and complete satisfaction.", "Our chef’s dedication and team work enhance the confidence of students by taking personal attention of them all the time.","Our courses are designed as per requirements of baking industry."],
+          "duration":"1 Months",
           "type":"Entrepreneur",
           "ageCriterea": "min 16 yrs.",
           "joiningKit":"Apron, Chef Caps, Ingredients, Study Material, Tool Kits.",
-          "fees": 85000
+          "fees": 55000
      },
      {
-          "id":3,
-          "name":"Bakery Specialization",
+          "id":"3",
+          "name":"Diploma in Baking & Patisserie : Level 2",
           "description":["We work all the time with our students & together we are able to create beautiful & amazing things that surely bring positive results and complete satisfaction.", "Our chef’s dedication and team work enhance the confidence of students by taking personal attention of them all the time.","Our courses are designed as per requirements of baking industry."],
-          "duration":"3 Months",
+          "duration":"6 Months",
           "type":"Entrepreneur",
           "ageCriterea": "min 16 yrs.",
           "joiningKit":"Apron, Chef Caps, Ingredients, Study Material, Tool Kits.",
-          "fees": 85000
+          "fees": 156000
      }
 ]
 

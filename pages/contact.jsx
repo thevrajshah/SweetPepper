@@ -1,13 +1,20 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 export default function Enroll() {
-  function onSubmit(token) {
-    document.getElementById("demo-form").submit();
-  }
+  var onloadCallback = function () {
+    grecaptcha.render('html_element', {
+      sitekey: '6Lc-sdsZAAAAAMihKjouTdF0TfLqM1w1mtoU33Uk',
+    });
+  };
+
   return (
     <>
       <Head>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script
+          src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+          async
+          defer
+        />
       </Head>
       {/* <div class="jumbotron jumbotron-fluid m-0">
         <div class="container">
@@ -29,7 +36,7 @@ export default function Enroll() {
               <p>
                 Any Doubts? Write to us & we'll call you for more information.
               </p>
-              <form>
+              <form onSubmit="mailto">
                 <input
                   type="text"
                   class="form-control"
@@ -58,20 +65,20 @@ export default function Enroll() {
                   <option>b</option>
                   <option>c</option>
                 </select>
-                <button type="submit"  class="g-recaptcha"
-                  data-sitekey="6LcOstoZAAAAAOUpv_S2rB7wX1KHSS7s2nsV_wLk"
-                  data-callback={onSubmit}
-                  data-action="submit" class="btn btn-primary mr-2">
+                <button type="submit" class="btn btn-primary mr-2">
                   Send
                 </button>
                 <button type="reset" className="btn btn-outline-primary">
                   Clear
                 </button>
-                <button
-                 
-                >
-                  Submit
-                </button>
+              </form>
+              <form action="?" method="POST">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6Lc-sdsZAAAAAMihKjouTdF0TfLqM1w1mtoU33Uk"
+                ></div>
+                <br />
+                <input type="submit" value="Submit" />
               </form>
             </div>
           </div>
